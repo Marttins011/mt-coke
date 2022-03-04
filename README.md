@@ -1,5 +1,5 @@
 # mt-coke
-Simple QBCore coke pricking and process script for free, enjoy :)
+Simple QBCore coke picking and process script for free, enjoy :)
 
 # Dependencies:
 qb-core: https://github.com/qbcore-framework/qb-core
