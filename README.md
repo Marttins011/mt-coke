@@ -20,4 +20,3 @@ https://discord.gg/AQHbsahZsV
 	["trowel"] 			 	         = {['name'] = 'trowel', 			  		['label'] = 'Pá', 					['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'trowel.png', 						['unique'] = false,    	['useable'] = true, 	['shouldClose'] = true,	   		['combinable'] = nil,   ['description'] = 'Small handheld garden shovel'},
 ```
 
-sorry but i don't find any images for this scritp, if you have, make a fork and i'll update that! Thanks!
