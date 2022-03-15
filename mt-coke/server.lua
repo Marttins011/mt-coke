@@ -14,7 +14,7 @@ RegisterNetEvent('mt-coke:server:ProcessarCoke', function()
     if coke_leaf ~= nil and coke_empty_bags ~= nil then
 
         if coke_leaf.amount >= 20 and coke_empty_bags.amount >= 30 then
-            Player.Functions.RemoveItem('coke_leaf', 10)
+            Player.Functions.RemoveItem('coke_leaf', 20)
             Player.Functions.RemoveItem('coke_empty_bags', 30)
             Player.Functions.AddItem('coke_bags', 30)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items['coke_bags'], "add")
