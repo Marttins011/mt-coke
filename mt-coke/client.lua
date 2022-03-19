@@ -19,7 +19,7 @@ end)
 -- Evento de processo
 RegisterNetEvent('mt-coke:client:ComecarProcesso', function()
     local playerPed = PlayerPedId()
-    QBCore.Functions.Progressbar("CokeProcess1", "STARTING PROCESS...", 2000, false, true, {
+    QBCore.Functions.Progressbar("CokeProcess1", "STARTING PROCESS...", 5000, false, true, {
         disableMovement = true,
         disableCarMovement = true,
         disableMouse = false,
@@ -29,28 +29,10 @@ RegisterNetEvent('mt-coke:client:ComecarProcesso', function()
         anim = "fixing_a_player",
         flags = 16,
     }, {}, {}, function()
-        --[[local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(5,20)
-   if success then
-    QBCore.Functions.Progressbar("CokeProcess1", "PROCESSING COKE...", 10000, false, true, {
-        disableMovement = true,
-        disableCarMovement = true,
-        disableMouse = false,
-        disableCombat = true,
-    }, {
-        animDict = "mini@repair",
-        anim = "fixing_a_player",
-        flags = 16,
-    }, {}, {}, function()]]
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("mt-coke:server:ProcessarCoke")
         ClearPedTasks(playerPed)
     end)
-   --[[else
-        QBCore.Functions.Notify("Falhado!", "error")
-        ClearPedTasks(playerPed)
-        end
-    end)]]
 end)
 
 -- Menu de processo
