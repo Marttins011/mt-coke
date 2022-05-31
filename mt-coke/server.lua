@@ -11,7 +11,7 @@ RegisterNetEvent('mt-coke:server:ProcessarCoke', function()
     local Player = QBCore.Functions.GetPlayer(src)
     local coke_leaf = Player.Functions.GetItemByName('coke_leaf')
     local coke_empty_bags = Player.Functions.GetItemByName('coke_empty_bags')
-    if coke_leaf ~= nil and coke_empty_bags ~= nil then
+    if coke_leaf ~= nil and coke_empty_bags ~= nil and coke_empty_bags.amount >= 30 and coke_leaf.amount >= 20 then
 
         Player.Functions.RemoveItem('coke_leaf', 20)
         Player.Functions.RemoveItem('coke_empty_bags', 30)
