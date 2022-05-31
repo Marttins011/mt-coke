@@ -28,4 +28,6 @@ RegisterNetEvent('mt-coke:server:ApanharCoke', function()
     local Player = QBCore.Functions.GetPlayer(src)
 
     Player.Functions.AddItem('coke_leaf', 5)
+    TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items['coke_leaf'], "add")
 end)
+
